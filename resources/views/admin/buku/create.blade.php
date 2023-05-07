@@ -62,13 +62,26 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="jd">Harga</label>
-                                                <input type="text" name="harga" class="form-control" placeholder="Masukkan Total Nilai">
+                                                <input type="text" name="harga" class="form-control {{ $errors->first('harga') ? "is-invalid":""}}"  placeholder="Masukkan Total Nilai">
+
+                                                @error('harga')
+                                            <small class="text-danger">
+                                                {{ $message }}
+                                            </small>
+                                            @enderror
+ 
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="jd">Stok</label>
-                                                <input type="text" name="stok" class="form-control">
+                                                <input type="text" name="stok" class="form-control {{ $errors->first('stok') ? "is-invalid":""}}">
+
+                                                @error('stok')
+                                                <small class="text-danger">
+                                                    {{ $message }}
+                                                </small>
+                                                @enderror
                                             </div>
                                         </div>
                                     </div>

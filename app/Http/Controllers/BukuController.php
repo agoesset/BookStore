@@ -72,14 +72,15 @@ class BukuController extends Controller
          $rules = [
             'id_buku'   => 'required',
             'nama'   => 'required',
-            'kategori_id'   => 'required',
+            'kategori_id'  => 'required',
             'penerbit_id'   => 'required',
-            'harga'   => 'required',
-            'stok'   => 'required',
+            'harga'   => 'required|integer',
+            'stok'   => 'required|integer',
         ];
  
         $messages = [
             'required'      => ":attribute gak boleh kosong",
+            'integer'      => ":attribute hanya berupa angka",
         ];
  
         $this->validate($request, $rules, $messages);
@@ -124,11 +125,12 @@ class BukuController extends Controller
                 'nama'   => 'required',
                 'kategori_id'   => 'required',
                 'penerbit_id'   => 'required',
-                'harga'   => 'required',
-                'stok'   => 'required',
+                'harga'   => 'required|integer',
+                'stok'   => 'required|integer',
             ];
             $messages = [
                 'required'      => ":attribute gak boleh kosong",
+                'integer'      => ":attribute hanya berupa angka",
             ];
      
             $this->validate($request, $rules, $messages);
