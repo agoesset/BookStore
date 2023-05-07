@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 # BookStore-LatihanUjiSertifikasi
 Program toko buku berbasis Web yang menjual buku-buku dari beberapa penerbit. Web ini dibuat sebagai acuan latihan sebelum menghadapi Uji Sertifikasi BNSP sebagai IT | Junior Web Developer.
-=======
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
